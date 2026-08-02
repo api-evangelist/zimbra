@@ -1,7 +1,29 @@
 aid: zimbra
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zimbra.png
 name: Zimbra
-description: Zimbra is a company surfaced as a portfolio company of redpoint-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Zimbra is an open-source email and collaboration platform serving more than 200 million
+  users worldwide, offering email, calendar, contacts, tasks, group chat, file storage
+  (Briefcase), and an in-browser office suite. It is deployed self-hosted (on-premises,
+  private cloud, or regional data center) to give organizations full data sovereignty over
+  their communications. Zimbra's programmatic surface is a SOAP API (account, mail, and
+  admin namespaces) wrapped by a first-party GraphQL/JavaScript client (@zimbra/api-client);
+  it also speaks the IMAP, POP3, SMTP, CalDAV, CardDAV, and Exchange ActiveSync standards.
+  There is no public OpenAPI/REST contract. Backed by Redpoint Ventures; added to the API
+  Evangelist network from a VC-portfolio lead and enriched from Zimbra's public developer
+  surface.
 url: https://raw.githubusercontent.com/api-evangelist/zimbra/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +33,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
-- Company
-apis: []
+- Email
+- Collaboration
+- Calendar
+- Messaging
+- Open Source
+- SOAP
+- GraphQL
+- Productivity
+apis:
+- name: Zimbra SOAP API
+  description: >-
+    SOAP API (XML and JSON encodings) for Zimbra Collaboration — account, mail, and admin
+    operations, POSTed to /service/soap on a Zimbra deployment. Self-hosted, so the base
+    host is per-deployment; the reference documents every request/response.
+  humanURL: https://files.zimbra.com/docs/soap_api/
+  properties:
+  - type: APIReference
+    url: https://files.zimbra.com/docs/soap_api/
+  - type: Documentation
+    url: https://wiki.zimbra.com/wiki/SOAP_API_Reference_Material_Beginning_with_ZCS_8.0
+  - type: SDKs
+    url: packages/zimbra-packages.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -22,4 +64,45 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.zimbra.com/
+  url: https://www.zimbra.com/
+- type: Documentation
+  url: https://www.zimbra.com/product/zimbra-documentation/
+- type: APIReference
+  url: https://files.zimbra.com/docs/soap_api/
+- type: Blog
+  url: https://blog.zimbra.com/
+- type: Support
+  url: https://support.zimbra.com/
+- type: GitHubOrganization
+  url: https://github.com/Zimbra
+- type: SignUp
+  url: https://www.zimbra.com/connect/forms/?form=trial-license
+- type: TermsOfService
+  url: https://www.zimbra.com/product/licenses-and-terms-of-use/
+- type: PrivacyPolicy
+  url: https://synacor.com/privacy-policy
+- type: Packages
+  url: packages/zimbra-packages.yml
+- type: SDKs
+  url: packages/zimbra-packages.yml
+- type: Authentication
+  url: authentication/zimbra-authentication.yml
+- type: Conventions
+  url: conventions/zimbra-conventions.yml
+- type: Lifecycle
+  url: lifecycle/zimbra-lifecycle.yml
+- type: Conformance
+  url: conformance/zimbra-conformance.yml
+- type: LLMsTxt
+  url: llms/zimbra-llms.txt
+- type: DomainSecurity
+  url: security/zimbra-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/zimbra-vulnerability-disclosure.yml
+- type: Security
+  url: https://wiki.zimbra.com/wiki/Security_Center
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

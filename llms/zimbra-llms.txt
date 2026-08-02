@@ -1,0 +1,30 @@
+# Zimbra
+
+> Zimbra is an open-source email and collaboration platform (email, calendar, contacts, tasks, chat, file storage, and an in-browser office suite) serving 200M+ users. It is self-hosted (on-premises, private cloud, or regional data center) for data sovereignty. Its programmatic interface is a SOAP API, wrapped by a first-party GraphQL/JS client. There is no public OpenAPI/REST contract.
+
+## APIs
+- [Zimbra SOAP API Reference](https://files.zimbra.com/docs/soap_api/): The canonical SOAP API reference (account, mail, admin namespaces).
+- [SOAP API Reference Material (ZCS 8.0+)](https://wiki.zimbra.com/wiki/SOAP_API_Reference_Material_Beginning_with_ZCS_8.0): Wiki index of SOAP request/response documentation.
+
+## SDKs & Packages
+- [@zimbra/api-client (npm)](https://www.npmjs.com/package/@zimbra/api-client): Official JS + GraphQL client over the Zimbra SOAP API (BSD-3-Clause).
+- [zm-api-js-client (GitHub)](https://github.com/Zimbra/zm-api-js-client): Source for the JS/GraphQL client.
+- [zm-mailbox (GitHub)](https://github.com/Zimbra/zm-mailbox): Core mailbox / server component (Java, FOSS edition).
+
+## Docs
+- [Product Documentation Hub](https://www.zimbra.com/product/zimbra-documentation/)
+- [Zimbra 10 Documentation](https://zimbra.github.io/documentation/zimbra-10/)
+- [Admin Guide](https://zimbra.github.io/documentation/zimbra-10/adminguide.html)
+- [Preauth (delegated login)](https://wiki.zimbra.com/wiki/Preauth)
+
+## Standards supported
+- IMAP, POP3, SMTP, CalDAV, CardDAV, Exchange ActiveSync
+
+## Support & Company
+- [Support Portal](https://support.zimbra.com/)
+- [Community Wiki](https://wiki.zimbra.com/)
+- [Blog](https://blog.zimbra.com/)
+- [GitHub Organization](https://github.com/Zimbra)
+- [Security Center](https://wiki.zimbra.com/wiki/Security_Center)
+- [Terms of Use](https://www.zimbra.com/product/licenses-and-terms-of-use/)
+- [Privacy Policy](https://synacor.com/privacy-policy)

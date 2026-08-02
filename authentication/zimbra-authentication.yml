@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: https://files.zimbra.com/docs/soap_api/
+docs: https://wiki.zimbra.com/wiki/SOAP_API_Reference_Material_Beginning_with_ZCS_8.0
+summary:
+  types: [soap-auth-token, preauth, oauth2]
+  api_key_in: []
+  notes: Zimbra has no public OpenAPI; auth is documented in the SOAP API reference.
+schemes:
+- name: AuthRequest
+  type: soap-auth-token
+  description: A SOAP <AuthRequest> in the urn:zimbraAccount namespace exchanges account
+    name + password for an authToken, returned in the response and passed on subsequent
+    requests via the <context><authToken> SOAP header (or the ZM_AUTH_TOKEN cookie for
+    the web client).
+  sources: [https://files.zimbra.com/docs/soap_api/]
+- name: preauth
+  type: preauth
+  description: Pre-authentication (preauth) computes an HMAC-SHA1 over account/timestamp/expiry
+    using a domain preauth key, enabling delegated/single-sign-on login without the
+    account password.
+  sources: [https://wiki.zimbra.com/wiki/Preauth]
+- name: admin-auth
+  type: soap-auth-token
+  description: Admin operations authenticate via <AuthRequest> in the urn:zimbraAdmin
+    namespace against the admin SOAP endpoint (default port 7071 /service/admin/soap).
+  sources: [https://files.zimbra.com/docs/soap_api/]
+- name: two-factor
+  type: totp
+  description: Two-factor authentication (TOTP) is supported; a second AuthRequest supplies
+    the TOTP code when 2FA is enabled on the account.
+  sources: [https://wiki.zimbra.com/wiki/Two_Factor_Authentication]

@@ -1,0 +1,34 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.zimbra.com/product/zimbra-documentation/
+standards:
+- id: soap
+  conforms: true
+  evidence: Primary programmatic interface is a SOAP API documented at files.zimbra.com/docs/soap_api/
+- id: graphql
+  conforms: true
+  evidence: First-party @zimbra/api-client exposes a GraphQL layer over the SOAP API
+- id: imap
+  conforms: true
+  evidence: Zimbra mail servers expose IMAP4 access for mail clients
+- id: pop3
+  conforms: true
+  evidence: Zimbra mail servers expose POP3 access
+- id: smtp
+  conforms: true
+  evidence: Zimbra uses Postfix MTA and speaks SMTP for mail transport
+- id: caldav
+  conforms: true
+  evidence: Calendar access via CalDAV is documented and supported
+- id: carddav
+  conforms: true
+  evidence: Contact access via CardDAV is documented and supported
+- id: activesync
+  conforms: true
+  evidence: Exchange ActiveSync (mobile sync) is supported for iOS/Android devices
+- id: rest-openapi
+  conforms: false
+  evidence: No public OpenAPI/REST contract; the programmatic surface is SOAP + GraphQL
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Errors are returned as SOAP Faults, not application/problem+json

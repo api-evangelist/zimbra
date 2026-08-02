@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: https://files.zimbra.com/docs/soap_api/
+docs: https://github.com/Zimbra/zm-api-js-client
+api_style: SOAP (XML and JSON encodings) over HTTP POST to /service/soap; a first-party
+  GraphQL client (@zimbra/api-client) wraps the SOAP surface.
+authentication:
+  style: SOAP authToken (see authentication/zimbra-authentication.yml)
+  header: <context><authToken>…</authToken></context> SOAP header, or ZM_AUTH_TOKEN cookie
+transport:
+  endpoints:
+  - /service/soap        # account/mail SOAP endpoint
+  - /service/admin/soap  # admin SOAP endpoint (port 7071)
+  encodings: [application/soap+xml, application/json]
+batching:
+  supported: true
+  mechanism: The <BatchRequest> element in urn:zimbra bundles multiple requests in one
+    round trip; the JS client additionally batches via DataLoader and Apollo caching.
+sessions:
+  supported: true
+  mechanism: Session headers (<context><session>) enable notification/change polling for
+    real-time updates.
+pagination:
+  style: offset/limit
+  params: [offset, limit]
+  notes: Search-style requests (SearchRequest, GetContacts, etc.) accept offset/limit and
+    return a "more" flag indicating additional results.
+idempotency:
+  supported: false
+  notes: The SOAP API does not document an idempotency-key mechanism.
+error_envelope:
+  shape: SOAP Fault with a <Detail><Error> element carrying a Zimbra error Code (e.g.
+    account.NO_SUCH_ACCOUNT, service.AUTH_REQUIRED) and a Trace id.
+  cross_reference: errors/ (not derivable without OpenAPI; error codes live in the SOAP
+    reference and zm-mailbox source)
+versioning:
+  scheme: product-release-train (Zimbra Collaboration / ZCS major versions, currently 10)
+  cross_reference: lifecycle/zimbra-lifecycle.yml

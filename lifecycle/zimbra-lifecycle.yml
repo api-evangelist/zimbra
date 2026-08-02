@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.zimbra.com/product/zimbra-documentation/
+versioning:
+  scheme: product-release-train
+  current: "10"
+  docs: https://zimbra.github.io/documentation/zimbra-10/
+  notes: Zimbra Collaboration (ZCS) ships as versioned major releases (9, 10, …); the SOAP
+    API is versioned with the product rather than a URL/date API version.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No formal API deprecation policy or RFC 8594 Sunset/Deprecation header support is
+    published; feature lifecycle is announced via the blog and release notes.
+support:
+  url: https://support.zimbra.com/
+  wiki: https://wiki.zimbra.com/
+status_page: null
+sla:
+  url: null
+deprecated_operations: []

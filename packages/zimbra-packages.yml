@@ -1,0 +1,14 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.npmjs.com/package/@zimbra/api-client
+packages:
+- language: javascript
+  registry: npm
+  name: "@zimbra/api-client"
+  url: https://www.npmjs.com/package/@zimbra/api-client
+  install: npm install @zimbra/api-client
+  version: 101.0.0
+  license: BSD-3-Clause
+  official: true
+  description: Zimbra JS API Client and GraphQL client for making requests against the Zimbra SOAP API.
+  source_repo: https://github.com/Zimbra/zm-api-js-client
