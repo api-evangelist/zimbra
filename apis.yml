@@ -50,7 +50,7 @@ tags:
 - Collaboration
 - Calendar
 - Messaging
-- Open-Source
+- Open Source
 - SOAP
 - GraphQL
 - Productivity
@@ -63,6 +63,7 @@ tags_raw:
 - SOAP
 - GraphQL
 - Productivity
+- Open-Source
 apis:
 - name: Zimbra SOAP API
   description: >-
