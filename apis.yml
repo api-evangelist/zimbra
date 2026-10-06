@@ -44,7 +44,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-10-06'
 tags:
 - Email
 - Collaboration
@@ -84,6 +84,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://blog.zimbra.com/feed/
+  type: BlogRSS
 - type: Website
   url: https://www.zimbra.com/
 - type: Documentation
