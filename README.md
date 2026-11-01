@@ -64,6 +64,94 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Zimbra is a company surfaced as a portfolio company of redpoint-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Zimbra is an open-source email and collaboration platform serving more than 200 million users worldwide, offering email, calendar, contacts, tasks, group chat, file storage (Briefcase), and an in-browser office suite. It is deployed self-hosted (on-premises, private cloud, or regional data center) to give organizations full data sovereignty over their communications. Zimbra's programmatic surface is a SOAP API (account, mail, and admin namespaces) wrapped by a first-party GraphQL/JavaScript client (@zimbra/api-client); it also speaks the IMAP, POP3, SMTP, CalDAV, CardDAV, and Exchange ActiveSync standards. There is no public OpenAPI/REST contract. Backed by Redpoint Ventures; added to the API Evangelist network from a VC-portfolio lead and enriched from Zimbra's public developer surface.
 
-Backed by: redpoint-ventures — http://www.zimbra.com/
+**Areas:** Email · Collaboration · Calendar · Messaging · Open Source · SOAP · GraphQL · Productivity
+
+## Zimbra on APIs.io
+
+Everything profiled for Zimbra is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/zimbra/](https://apis.io/providers/zimbra/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Zimbra SOAP API](https://apis.io/apis/zimbra/zimbra-soap-api/) — SOAP API (XML and JSON encodings) for Zimbra Collaboration — account, mail, and admin operations, POSTed to /service/soap on a Zimbra deployment.…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Zimbra Authentication](https://apis.io/security/zimbra/zimbra-authentication/)
+- [Zimbra Domain Security](https://apis.io/security/zimbra/zimbra-domain-security/)
+- [Zimbra Vulnerability Disclosure](https://apis.io/security/zimbra/zimbra-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.zimbra.com/)
+- [Documentation](https://www.zimbra.com/product/zimbra-documentation/)
+- [API reference](https://files.zimbra.com/docs/soap_api/)
+- [Sign up](https://www.zimbra.com/connect/forms/?form=trial-license)
+- [Support](https://support.zimbra.com/)
+- [Blog](https://blog.zimbra.com/)
+- [Security](https://wiki.zimbra.com/wiki/Security_Center)
+- [Terms of service](https://www.zimbra.com/product/licenses-and-terms-of-use/)
+- [Privacy policy](https://synacor.com/privacy-policy)
+- [GitHub](https://github.com/Zimbra)
+
+## API Evangelist rating
+
+**Kin Score 27.3** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 39.3 |
+| Access clarity | 34.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/zimbra/](https://apis.io/providers/zimbra/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Zimbra: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/zimbra/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
